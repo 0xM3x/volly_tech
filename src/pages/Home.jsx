@@ -1,12 +1,11 @@
 import Navbar from '../components/Navbar';
+import Hero from '../sections/Hero';
 
 export default function Home() {
   return (
     <div>
       <Navbar />
-      <div className="p-8">
-        Home Page Content
-      </div>
+      <Hero />
     </div>
   );
 }
