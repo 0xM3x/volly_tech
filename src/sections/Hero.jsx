@@ -16,15 +16,15 @@ export default function Hero() {
   };
 
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between p-8">
-      <div className="w-full lg:w-1/2 max-w-lg">
+    <section className="flex flex-col lg:flex-row items-center justify-between p-8 bg-background">
+      <div className="w-full lg:w-1/2 max-w-lg text-text">
         <h2 className="text-4xl font-bold mb-4">
-          Transforming Your <span className="text-blue-500">IoT Solutions</span>
+          Transforming Your <span className="text-primary">IoT Solutions</span>
         </h2>
-        <p className="text-gray-600 mb-6">
+        <p className="text-text mb-6">
           From Smart Trash Systems to Electric Car Charging Stations, Volly Tech delivers end-to-end IoT solutions.
         </p>
-        <button className="bg-blue-500 text-white px-6 py-2 rounded">
+        <button className="bg-primary text-secondary px-6 py-2 rounded">
           Explore Our Solutions
         </button>
       </div>
@@ -32,7 +32,7 @@ export default function Hero() {
       <div className="relative w-full lg:w-1/2 mt-8 lg:mt-0">
         <video
           ref={videoRef}
-          className="rounded shadow-lg w-full"
+          className="rounded shadow-2xl drop-shadow-2xl w-full"
           src="https://www.w3schools.com/html/mov_bbb.mp4"
           autoPlay
           muted
@@ -41,7 +41,7 @@ export default function Hero() {
 
         <button
           onClick={togglePlay}
-          className="absolute bottom-4 right-4 bg-transparent p-2 rounded-full border-none shadow text-white"
+          className="absolute bottom-4 right-4 bg-black bg-opacity-50 text-white p-2 rounded-full"
         >
           {isPlaying ? <FaPause /> : <FaPlay />}
         </button>
